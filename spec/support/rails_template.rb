@@ -137,10 +137,10 @@ gsub_file 'config/environments/test.rb', /  config.cache_classes = true/, <<-RUB
   config.action_mailer.default_url_options = {host: 'example.com'}
   config.assets.precompile += %w( some-random-css.css some-random-js.js a/favicon.ico )
 
-  config.active_record.maintain_test_schema = false
+  config.activerecord.maintain_test_schema = false
 
   if Rails::VERSION::MAJOR >= 5
-    config.active_record.belongs_to_required_by_default = false
+    config.activerecord.belongs_to_required_by_default = false
   end
 
 RUBY

@@ -39,7 +39,7 @@ group :test do
   gem 'codecov', require: false # Test coverage website. Go to https://codecov.io
   gem 'cucumber-rails', require: false
   gem 'cucumber', '1.3.20'
-  gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
+  gem 'database_cleaner'#, git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
   gem 'jasmine'
   gem 'jslint_on_rails'
   gem 'launchy'
@@ -50,3 +50,5 @@ group :test do
   gem 'sqlite3', platforms: :mri
   gem 'poltergeist'
 end
+
+gem 'activerecord'

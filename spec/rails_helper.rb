@@ -10,7 +10,7 @@ unless File.exists?(ENV['RAILS_ROOT'])
   system 'rake setup'
 end
 
-require 'active_record'
+require 'activerecord'
 require 'active_admin'
 require 'devise'
 ActiveAdmin.application.load_paths = [ENV['RAILS_ROOT'] + "/app/admin"]
